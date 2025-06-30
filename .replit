@@ -1,0 +1,19 @@
+entrypoint = "App.js"
+modules = ["nodejs-18"]
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["npm", "run", "start-web"]
+deploymentTarget = "static"
+publicDir = "dist"
+build = ["npm", "run", "build"]
+
+[[ports]]
+localPort = 8081
+externalPort = 80
+
+[[ports]]
+localPort = 19006
+externalPort = 8080
