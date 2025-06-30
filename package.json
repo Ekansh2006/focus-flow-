@@ -51,3 +51,14 @@
   },
   "private": true
 }
+{
+  "name": "focus-flow-app",
+  "main": "expo-router/entry",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --web --port 8081",
+    "dev": "expo start --web --dev",
+    "build": "expo export:web",
+    "serve": "expo serve --port 8081"
+  }
+}
